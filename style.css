@@ -45,3 +45,12 @@ li {
   gap: 8px;
   align-items: center;
 }
+
+button,
+select {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
