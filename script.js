@@ -26,6 +26,10 @@ btnTambah.addEventListener("click", function () {
   optProgress.text = "Progress";
   optDone.text = "Done";
 
+  selectStatus.add(optTodo);
+  selectStatus.add(optProgress);
+  selectStatus.add(optDone);
+
   listbaru.appendChild(span);
   daftarTugas.appendChild(listbaru);
 
