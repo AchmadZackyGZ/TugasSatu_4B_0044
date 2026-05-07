@@ -42,6 +42,14 @@ btnTambah.addEventListener("click", function () {
   // fitur men edit data tugas
   const btnEdit = document.createElement("button");
   btnEdit.innerHTML = "Edit";
+  btnEdit.addEventListener("click", function () {
+    // mengedit teks tugas
+    const newTask = prompt("Edit teks tugas Anda:", tugasSaatIni);
+    if (newTask !== null && newTask.trim() !== "") {
+      currentTask = newTask;
+      span.innerHTML = `${tugasSaatIni} - ${waktuSaatIni}`;
+    }
+  });
 
   listbaru.appendChild(span);
   daftarTugas.appendChild(listbaru);
