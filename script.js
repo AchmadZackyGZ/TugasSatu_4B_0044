@@ -30,6 +30,15 @@ btnTambah.addEventListener("click", function () {
   selectStatus.add(optProgress);
   selectStatus.add(optDone);
 
+  // jika status done maka text di coret langsung
+  selectStatus.addEventListener("change", function () {
+    if (selectStatus.value === "Done") {
+      span.style.textDecoration = "line-through";
+    } else {
+      span.style.textDecoration = "none";
+    }
+  });
+
   listbaru.appendChild(span);
   daftarTugas.appendChild(listbaru);
 
