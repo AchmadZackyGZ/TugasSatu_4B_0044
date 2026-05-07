@@ -37,3 +37,11 @@ h3 {
   border: none;
   color: white;
 }
+
+li {
+  color: white;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
