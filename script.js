@@ -15,7 +15,7 @@ btnTambah.addEventListener("click", function () {
   let waktuSaatIni = inputDate.value;
 
   const span = document.createElement("span");
-  span.innerHTML = inputValue.value;
+  span.innerHTML = `${tugasSaatIni} - ${waktuSaatIni}`;
 
   listbaru.appendChild(span);
   daftarTugas.appendChild(listbaru);
