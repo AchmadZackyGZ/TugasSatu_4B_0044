@@ -51,6 +51,10 @@ btnTambah.addEventListener("click", function () {
     }
   });
 
+  // fitur hapus data
+  const btnHapus = document.createElement("button");
+  btnHapus.innerHTML = "Hapus";
+
   listbaru.appendChild(span);
   daftarTugas.appendChild(listbaru);
 
