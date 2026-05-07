@@ -67,5 +67,6 @@ btnTambah.addEventListener("click", function () {
   daftarTugas.appendChild(listbaru);
 
   inputValue.value = "";
+  inputDate.value = "";
   inputValue.focus();
 });
