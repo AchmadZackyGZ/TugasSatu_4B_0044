@@ -17,7 +17,7 @@ btnTambah.addEventListener("click", function () {
   const span = document.createElement("span");
   span.innerHTML = `${tugasSaatIni} - ${waktuSaatIni}`;
 
-  // ubah status tugas seperti progress done dll
+  // fiturubah status tugas seperti progress done dll
   const selectStatus = document.createElement("select");
   const optTodo = document.createElement("option");
   const optProgress = document.createElement("option");
@@ -38,6 +38,10 @@ btnTambah.addEventListener("click", function () {
       span.style.textDecoration = "none";
     }
   });
+
+  // fitur men edit data tugas
+  const btnEdit = document.createElement("button");
+  btnEdit.innerHTML = "Edit";
 
   listbaru.appendChild(span);
   daftarTugas.appendChild(listbaru);
