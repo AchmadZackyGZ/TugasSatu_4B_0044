@@ -7,6 +7,9 @@ btnTambah.addEventListener("click", function () {
   if (inputValue.value === "") {
     alert("Input tidak boleh kosong!");
     return;
+  } else if (inputValue.value.trim() === "") {
+    alert("Input tidak boleh menggunakan spasi saja!");
+    return;
   }
 
   const listbaru = document.createElement("li");
