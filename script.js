@@ -46,7 +46,7 @@ btnTambah.addEventListener("click", function () {
     // mengedit teks tugas
     const newTask = prompt("Edit teks tugas Anda:", tugasSaatIni);
     if (newTask !== null && newTask.trim() !== "") {
-      currentTask = newTask;
+      tugasSaatIni = newTask;
       span.innerHTML = `${tugasSaatIni} - ${waktuSaatIni}`;
     }
   });
