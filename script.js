@@ -58,7 +58,12 @@ btnTambah.addEventListener("click", function () {
     listbaru.remove();
   });
 
+  // masukan semua elemen yg di buat ke dalam tag <li>
   listbaru.appendChild(span);
+  listbaru.appendChild(selectStatus);
+  listbaru.appendChild(btnEdit);
+  listbaru.appendChild(btnHapus);
+
   daftarTugas.appendChild(listbaru);
 
   inputValue.value = "";
