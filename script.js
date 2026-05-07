@@ -10,6 +10,10 @@ btnTambah.addEventListener("click", function () {
   }
 
   const listbaru = document.createElement("li");
+  // Menyimpan teks tugas dan tanggal ke dalam variabel
+  let tugasSaatIni = inputValue.value;
+  let waktuSaatIni = inputDate.value;
+
   const span = document.createElement("span");
   span.innerHTML = inputValue.value;
 
