@@ -17,6 +17,12 @@ btnTambah.addEventListener("click", function () {
   const span = document.createElement("span");
   span.innerHTML = `${tugasSaatIni} - ${waktuSaatIni}`;
 
+  // ubah status tugas seperti progress done dll
+  const selectStatus = document.createElement("select");
+  const optTodo = document.createElement("option");
+  const optProgress = document.createElement("option");
+  const optDone = document.createElement("option");
+
   listbaru.appendChild(span);
   daftarTugas.appendChild(listbaru);
 
